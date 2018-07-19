@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Favorite Books</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Library Filters</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="index.html">All Books</a></li>
+        <li><a href="author.html">Authors</a></li>
+        <li><a href="series.html">Series</a></li>
+      </ul><br>
+
+      <!-- Subject button -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Subjects <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="subjects.html">Science Fiction</a></li>
+          <li><a href="">Hard Fiction</a></li>
+        </ul>
+      </div>
+
+      <!-- Themes button -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Themes <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="themes.html">Virtual Reality</a></li>
+          <li><a href="themes.html">Adventure</a></li>
+          <li><a href="themes.html">Realistic</a></li>
+        </ul>
+      </div>
+
+      <!-- Settings button -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Settings <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="settings.html">Near Future</a></li>
+          <li><a href="settings.html">Modern Day</a></li>
+          <li><a href="settings.html">Mars</a></li>
+          <li><a href="settings.html">Earth</a></li>
+        </ul>
+      </div><br><br>
+
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Books..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+      
+      <h4>Near Future</h4>
+      <hr>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Book Title</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Jurassic Park</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Lost World</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr>
+      
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
