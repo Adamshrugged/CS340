@@ -53,7 +53,7 @@
         </button>
         <ul class="dropdown-menu">
           <li><a href="subjects.html">Science Fiction</a></li>
-          <li><a href="">Hard Fiction</a></li>
+          <li><a href="subjects.html">Hard Fiction</a></li>
         </ul>
       </div>
 
@@ -90,9 +90,41 @@
           </button>
         </span>
       </div>
-    </div>
+    </div>  
 
     <div class="col-sm-9">
+      <h4>Add a new book</h4>
+      <form class="form-inline" action="#">
+        <label for="title">Title:</label>
+        <input type="text" class="form-control" placeholder="Title" id="title">
+        <label for="title">Start Date:</label>
+        <input type="text" class="form-control" placeholder="2018-01-01" id="start_date">
+        <label for="title">Date Bought:</label>
+        <input type="text" class="form-control" placeholder="2018-01-01" id="bought">
+        <label for="title">Publication Date:</label>
+        <input type="text" class="form-control" placeholder="2018-01-01" id="pubdate">
+        <label for="title">ISBN:</label>
+        <input type="text" class="form-control" placeholder="ISBN" id="isbn">
+        <label for="title">ASIN:</label>
+        <input type="text" class="form-control" placeholder="ASIN" id="asin">
+        <label for="title"># of Pages:</label>
+        <input type="text" class="form-control" placeholder="300" id="pages">
+        <div class="form-group">
+        <label for="author">Author:</label>
+          <select class="form-control" id="author">
+            <option>J.K. Rowling</option>
+            <option>Stephen King</option>
+            <option>Mark Twain</option>
+            <option>Agatha Christie</option>
+          </select>
+        </div> 
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+      </form>
+
+      <hr>
+
+
+
       <h4><small>RECENTLY READ BOOKS</small></h4>
       <hr>
       <h2>Ready Player One</h2>
